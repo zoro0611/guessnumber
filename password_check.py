@@ -4,7 +4,7 @@ left_chance = 3 #剩餘機會
 # 不對的話 印出"密碼錯誤! 還有_次機會"
 # 對的話， 就印出 "登入成功!"
 
-while True: #迴圈開始
+while left_chance > 0: #迴圈開始
     user_type = input("請輸入密碼: ")
     if user_type == password:
         print("登入成功!")
@@ -12,5 +12,4 @@ while True: #迴圈開始
     else:
         left_chance = left_chance - 1
         print("密碼錯誤! 還有", left_chance ,"次機會")
-        if left_chance == 0:
-            break
+
