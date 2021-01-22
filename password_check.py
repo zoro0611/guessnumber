@@ -13,3 +13,5 @@ while left_chance > 0: #迴圈開始
         left_chance = left_chance - 1
         print("密碼錯誤! 還有", left_chance ,"次機會")
 
+#這邊停止迴圈
+
